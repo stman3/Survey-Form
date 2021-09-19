@@ -1,166 +1,170 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="/scr/global.css">
-<div id="container">
-    <header class="header">
-        <h1 id="title">FreeCodeCamp Survey Form</h1>
-        <p id="description">This Survey for FreeCodeCamp project.
-
-        </p>
-    </header>
-    <form id="survey-form">
-        <div id="form-group">
-            <label for="name" id="name-label">Name</label>
-            <input 
-            type="text"
-            name="name"
-            class="form-control"
-            id="name"
-            placeholder="Enter your name"
-            required
-            >
-        </div>
-        <div id="form-group">
-            <label for="email" id="email-label">Email</label>
-            <input 
-            type="email"
-            name="email"
-            class="form-control"
-            id="email"
-            placeholder="Enter your Email"
-            required
-            >
-        </div>
-        <div id="form-group">
-            <label for="age" id="number-label">Age(optional)</label>
-            <input 
-            type="number"
-            pattern="\d*"
-            name="age"
-            id="age"
-            class="form-control"
-            min="18"
-            max="100"
-            placeholder="Age"
-
-            > 
-
-        </div>
-        <div id="form-group">
-            <label for="status" id="status-label">What is your marital status?</label>
-            <select name="status" id="status">
-                <option value="" disabled selected>select your marital status</option>
-                <option value="single">Single</option>
-                <option value="married">Married</option>
-                <option value="single">Single</option>
+    <div class="box">
+        <div id="container">
+            <header class="header">
+                <h1 id="title">FreeCodeCamp Survey Form</h1>
+                <p id="description">This Survey for FreeCodeCamp project.
+        
+                </p>
+            </header>
+            <form id="survey-form">
+                <div id="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input 
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                    >
+                </div>
+                <div id="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input 
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your Email"
+                    required
+                    >
+                </div>
+                <div id="form-group">
+                    <label for="age" id="number-label">Age(optional)</label>
+                    <input 
+                    type="number"
+                    pattern="\d*"
+                    name="age"
+                    id="age"
+                    class="form-control"
+                    min="18"
+                    max="100"
+                    placeholder="Age"
+        
+                    > 
+        
+                </div>
+                <div id="form-group">
+                    <label for="status" id="status-label">What is your marital status?</label>
+                    <select name="status" id="status">
+                        <option value="" disabled selected>select your marital status</option>
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="single">Single</option>
+                        
+        
+                    </select>
+                </div>
+                <div id="form-group">
+                    <p id="salary">how much salary you are?</p>
+                    <input 
+                    type="radio"
+                    id="salary1"
+                    name="salary"
+                    value="3000"
+                    class="form-control"
+                    >
+                    <label for="salary" id="salary1">0$ - 3000$</label>
+        
+                    <input 
+                    type="radio"
+                    id="salary2"
+                    name="salary"
+                    value="6000"
+                    class="form-control"
+                    >
+                    <label for="salary" id="salary2">3000$ - 6000$</label>
+        
+                    <input 
+                    type="radio"
+                    id="salary3"
+                    name="salary"
+                    value="12000"
+                    class="form-control"
+                    
+                    >
+                    <label for="salary" id="salary3">6000$ - 12000$</label>
+        
+                    <input 
+                    type="radio"
+                    name="salary"
+                    id="salary4"
+                    value="50000"
+                    class="form-control"
+                    >
+                    <label for="salary" id="salary4">12000$ - 50000$</label>
+        
+        
+        
+                </div>
+                <div id="form-group">
+                    <div><p id="device">what device do you have? (Check all that apply)</p></div>
+                    <input 
+                    type="checkbox"
+                    name="anime"
+                    id="anime"
+                    value="anime"
+                    class="form-control"
+                    >
+                    <label for="anime" id="anime">Do you watch anime</label>
+        
+                    <input 
+                    type="checkbox"
+                    name="ps5"
+                    id="ps5"
+                    value="ps5"
+                    class="form-control"
+                    
+                    >
+                    <label for="ps5" id="ps5">Do you have ps5</label>
+        
+                    <input 
+                    type="checkbox"
+                    name="nintendo"
+                    id="nintendo"
+                    value="nintendo"
+                    class="form-control"
+                    >
+                    <label for="nintendo" id="nintendo">Do you have Nintendo Switch</label>
+        
+                    <input 
+                    type="checkbox"
+                    name="xbox"
+                    id="xbox"
+                    value="xbox"
+                    class="form-control"
+                    >
+        
+                    <label for="xbox" id="xbox">DO you have Xbox360</label>
+        
+        
+        
+                    
+        
+        
+                </div>
+        
+                <div id="form-group">
+                    <label for="comments" id="comments">Any comments or suggestions?</label>
+                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here...."></textarea>
+        
+                </div>
+        
+                   <div id="form-group">
+                       <button type="submit" id="submit" class="submit-button">Submit</button>
+                   </div>
+        
                 
-
-            </select>
-        </div>
-        <div id="form-group">
-            <p id="salary">how much salary you are?</p>
-            <input 
-            type="radio"
-            id="salary1"
-            name="salary"
-            value="3000"
-            class="form-control"
-            >
-            <label for="salary" id="salary1">0$ - 3000$</label>
-
-            <input 
-            type="radio"
-            id="salary2"
-            name="salary"
-            value="6000"
-            class="form-control"
-            >
-            <label for="salary" id="salary2">3000$ - 6000$</label>
-
-            <input 
-            type="radio"
-            id="salary3"
-            name="salary"
-            value="12000"
-            class="form-control"
-            
-            >
-            <label for="salary" id="salary3">6000$ - 12000$</label>
-
-            <input 
-            type="radio"
-            name="salary"
-            id="salary4"
-            value="50000"
-            class="form-control"
-            >
-            <label for="salary" id="salary4">12000$ - 50000$</label>
-
-
-
-        </div>
-        <div id="form-group">
-            <div><p id="device">what device do you have? (Check all that apply)</p></div>
-            <input 
-            type="checkbox"
-            name="anime"
-            id="anime"
-            value="anime"
-            class="form-control"
-            >
-            <label for="anime" id="anime">Do you watch anime</label>
-
-            <input 
-            type="checkbox"
-            name="ps5"
-            id="ps5"
-            value="ps5"
-            class="form-control"
-            
-            >
-            <label for="ps5" id="ps5">Do you have ps5</label>
-
-            <input 
-            type="checkbox"
-            name="nintendo"
-            id="nintendo"
-            value="nintendo"
-            class="form-control"
-            >
-            <label for="nintendo" id="nintendo">Do you have Nintendo Switch</label>
-
-            <input 
-            type="checkbox"
-            name="xbox"
-            id="xbox"
-            value="xbox"
-            class="form-control"
-            >
-
-            <label for="xbox" id="xbox">DO you have Xbox360</label>
-
-
-
-            
-
-
-        </div>
-
-        <div id="form-group">
-            <label for="comments" id="comments">Any comments or suggestions?</label>
-            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here...."></textarea>
-
-        </div>
-
-           <div id="form-group">
-               <button type="submit" id="submit" class="submit-button">Submit</button>
-           </div>
-
+                
+            </form>
         
-        
-    </form>
+        </div>
 
-</div>
+    </div>
+
 
 
 
