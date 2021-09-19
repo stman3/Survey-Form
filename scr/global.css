@@ -1,7 +1,35 @@
 body {
-  background: purple;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/002/197/246/small_2x/glowing-neon-line-clipboard-with-checklist-icon-isolated-on-brick-wall-background-control-list-symbol-survey-poll-or-questionnaire-feedback-form-illustration-isolated-on-brick-wall-vector.jpg")
+    repeat 0 0;
 }
 
+.box {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #container {
-  background: white;
+  max-width: 80%;
+  height: 100%;
+  background-color: gray;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#description {
+  padding: 20px;
+  text-align: center;
+}
+
+#survey-form {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+#form-group {
 }
