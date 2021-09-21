@@ -1,21 +1,18 @@
 body {
-  background: url("https://static.vecteezy.com/system/resources/thumbnails/002/197/246/small_2x/glowing-neon-line-clipboard-with-checklist-icon-isolated-on-brick-wall-background-control-list-symbol-survey-poll-or-questionnaire-feedback-form-illustration-isolated-on-brick-wall-vector.jpg")
-    repeat 0 0;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/002/197/246/small_2x/glowing-neon-line-clipboard-with-checklist-icon-isolated-on-brick-wall-background-control-list-symbol-survey-poll-or-questionnaire-feedback-form-illustration-isolated-on-brick-wall-vector.jpg");
 }
 
 .box {
-  padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 #container {
-  max-width: 80%;
+  max-width: 100%;
   height: 100%;
-  background-color: gray;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,9 +24,48 @@ body {
 }
 
 #survey-form {
-  text-align: left;
-  margin-bottom: 30px;
+  max-width: 100%;
+  background-color: black;
 }
 
 #form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  max-width: 100%;
+  width: 700px;
+
+  height: 2.4rem;
+  border: black;
+  border-radius: 10px;
+}
+
+#comments {
+  display: block;
+}
+
+#submit {
+}
+
+.radio-control {
+  margin-bottom: 20px;
+}
+
+.checkbox-control {
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#comments {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
